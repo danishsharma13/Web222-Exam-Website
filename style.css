@@ -1,0 +1,303 @@
+
+*, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* NAVIGATION */
+#menu {
+    margin: auto;
+    padding: 10px;
+    max-width: 1100px;
+    width: 90vw;
+    height: auto;
+    background-color: #393e46;
+    
+    display: flex;
+    justify-content: space-between;
+
+    box-shadow: 0 0 5px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+nav div {
+    padding: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color:#fbf9fa;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #fbf9fa;
+    color: #393e46;
+}
+
+/* PIC AND NAME */
+#pic {
+    margin: auto;
+    padding: 10px;
+    max-width: 1100px;
+    width: 90vw;
+    height: 90vh;
+    background-color:#00adb5;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 0 5px;
+}
+
+#pic h1 {
+    margin: 10px 0;
+    font-size: 1.8rem;
+}
+
+#pic h1, #pic h4 {
+    color: #fbf9fa;
+}
+
+#main-button {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-button > a > button {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+#contact-me {
+    background-color:#393e46;
+    color: #fbf9fa;
+}
+
+#contact-me:hover {
+    cursor: pointer;
+    background-color: #5f5b5d;
+    color: #fbf9fa;
+}
+
+#resume {
+    background-color:#fbf9fa;
+    color: #393e46;
+}
+
+#resume:hover {
+    cursor: pointer;
+    background-color:#7d7a8a;
+    color: #fbf9fa;
+}
+
+/* ABOUT */
+#about {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1100px;
+    width: 90vw;
+    height: auto;
+    background-color: #eeeeee;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    border-radius: 2px;
+    box-shadow: 0 0 2px;
+}
+
+#about h3, #about p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* EDUCATION */
+
+#education {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1100px;
+    width: 90vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.education-items {
+    margin: 15px 0;
+    height: 18vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    box-shadow: 0px 0px 5px;
+}
+
+.degree {
+    width: 20%;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #28b0a5;
+    color: #fbf9fa;
+}
+
+.degree h5 {
+    padding: 10px;
+}
+
+.degree h4 {
+    font-size: 0.9rem;
+}
+
+.education-items > .institute {
+    padding-left: 10px;
+    max-width: 80%;
+    width: 60%;
+    height: 100%
+}
+
+.institute > div {
+    padding-top: 20px;
+}
+
+.inst-info {
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed darkgrey;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+
+#contact {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1100px;
+    width: 90vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+fieldset {
+    background-color: #28b0a5;
+    border: 0px;
+    border-radius: 15px;
+}
+
+#form div {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+
+    color: #fbf9fa;
+}
+
+#form div > label {
+    width: 10%;
+    margin-right: 40px;
+}
+
+#form div > textarea {
+    width: 30%;
+    padding: 5px;
+}
+
+#form div > input {
+    width: 30%;
+    padding: 5px;
+}
+ #submit {
+    margin-top: 30px;
+    border-radius: 10px;
+    max-width: 20%;
+
+    background-color:#393e46;
+    color: #fbf9fa;
+ }
+
+ #submit:hover {
+    background-color: #5f5b5d;
+    color: #fbf9fa;
+ }
+
+
+ /* FOOTER */
+
+ #honesty-n-details {
+    margin: auto;
+    padding: 10px;
+    max-width: 1100px;
+    width: 90vw;
+ }
+
+ #honesty {
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 1100px;
+    width: 90vw;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    box-shadow: 0 0 5px;
+ }
+
+ #honest {
+    width: 60%;
+    margin-right: 30px;
+ }
+
+ #details {
+     margin: auto;
+ }
+
+ #details > div {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 10px 0;
+ }
+
+ .word {
+     width: 35%;
+ }
+
+ .info {
+     width: 40%;
+     font-size: 0.8rem;
+ }
+
+
+

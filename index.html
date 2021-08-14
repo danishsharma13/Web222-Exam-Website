@@ -1,0 +1,282 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Sharma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav id="menu">
+        <ul class="class-items">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="class-items">
+            <a href="#honesty">HONESTY</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- FIRST SECTION: PIC AND NAME-->
+        <section id="pic">
+            <img src="https://via.placeholder.com/150" />
+            <h1>
+                Danish Sharma
+            </h1>
+            <h4>
+                Seneca Computer Programming & Analysis Student
+            </h4>
+            <div id="main-button">
+                <a href="#"><button id="resume">Resume</button></a>
+                <a href="#contact"><button id="contact-me">Contact Me</button></a>
+            </div>
+        </section>
+        
+        <!-- SECOND SECTION: ABOUT ME -->
+        <section id="about">
+            <h3>
+                ABOUT
+            </h3>
+            <p>
+                I am Danish Sharma and I am currently in first year second semester at Seneca College in Computer Programming & Analysis Advanced Diploma Program. I have been coding for 2 years and have learned different coding languages. Either I have self-taught myself a language or I have learned it in a post-secondary education.
+            </p>
+            <p>
+                Coding is my hobby as I like to make new programs for fun or just learn a language in general. Other than that, my hobbies include Video Games, socializing, browsing YouTube, Netflix, Amazon Prime, etc.
+            </p>
+        </section>
+
+        <!-- THIRD SECTION: EDUCATION -->
+        <section id="education">
+            <h3>EDUCATION</h3><hr>
+            <div class="education-items">
+                <div class="degree">
+                    <div>
+                        <h5>
+                            2013 - 2016 (completed)
+                        </h5>
+                        <h4>
+                            Diploma
+                        </h4>
+                    </div>
+                </div>
+                <div class="institute">
+                    <div>
+                        <h4>
+                            High School Diploma
+                        </h4>
+                        <h5>Bishop P.F. Reding Catholic Secondary School</h5>
+                    </div>
+
+                    <div class="inst-info">
+                        <p>Ontario Secondary School Diploma Holder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-items">
+                <div class="degree">
+                    <h5>
+                        2016 - 2019 (Transfer)
+                    </h5>
+                    <h4>
+                        Degree
+                    </h4>
+                </div>
+
+                <div class="institute">
+                    <div>
+                        <h4>
+                            Bachelor's Degree
+                        </h4>
+                        <h5>University of Toronto</h5>
+                    </div>
+
+                    <div class="inst-info">
+                        <p>
+                            Major in Business Administration & Minor in Computer Science</p>
+                        <p>Transferred to Seneca</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-items">
+                <div class="degree">
+                    <div>
+                        <h5>
+                            2019 - 2022 (Expected)
+                        </h5>
+                        <h4>
+                            A. Diploma
+                        </h4>
+                    </div>
+                </div>
+                <div class="institute">
+                    <div>
+                        <h4>
+                            Advanced Diploma
+                        </h4>
+                        <h5>Seneca College</h5>
+                    </div>
+
+                    <div class="inst-info">
+                        <p>Computer Programming & Analysis, 2nd Semester</p>
+                        <p>3.9 CGPA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOURTH SECTION: CONTACT FORM -->
+        <section id="contact">
+            <h3>Contact me</h3> <hr>
+            <form id="form" action="https://httpbin.org/post" method="POST">
+                <fieldset>
+                    <div>
+                        <label for="name">Name </label>
+                        <input type="text" name="name" id="name" autocomplete="name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email </label>
+                        <input type="email" name="email" id="email" autocomplete="email" required>
+                    </div>
+
+                    <div id="form-address">
+                        <label for="address">Address </label>
+                        <input type="address" name="address" id="address" autocomplete="address" required>
+                        
+                    </div>
+                    <!-- Adding city input for my own choice -->
+                    <div>
+                        <label for="city">City</label>
+                        <input list="city" id="city" type="text" name="address" autocomplete="address-level2" required>
+                        <datalist id="city">
+                            <option value="Toronto"></option>
+                            <option value="Brampton"></option>
+                            <option value="Mississauga"></option>
+                            <option value="Milton"></option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label for="postal">Postal Code</label>
+                        <input type="text" id="postal" pattern="[a-zA-Z][0-9][a-zA-Z] ?[0-9][a-zA-Z][0-9]" autocomplete="postal-code" name="postal" required>
+                    </div>
+
+                    <div>
+                        <label for="prov">Province</label>
+                        <input type="text"id="prov" autocomplete="address-level1" name="prov" required>
+                    </div>
+
+                    <!-- QUESTION SECTION-->
+                    <div id="question-div">
+                        <label for="question">Questions</label>
+                        <input type="radio" id="question" name="option" value="question">
+                    </div>
+
+                    <div id="question-input">
+                        <label for="ques-input">Type Question</label>
+                        <textarea type="text" id="ques-input" name="option" rows="5" cols="20"></textarea>
+                    </div>
+
+                    <!-- COMMENT SECTION -->
+                    <div id="comment-div">
+                        <label for="comment">Comment</label>
+                        <input type="radio" id="comment" name="option" value="comment">
+                    </div>
+
+                    <div id="comment-input">
+                        <label for="com-input">Type Comment</label>
+                        <textarea type="text" id="com-input" name="option" rows="5" cols="20"></textarea>                        
+                    </div>
+
+                    <!-- HIRING SECTION -->
+                    <div id="hiring-div">
+                        <label for="hiring">Hiring</label>
+                        <input type="radio" id="hiring" name="option" value="hiring">
+                    </div>
+
+                    <div id="hiring-input">
+                        <label for="hire-input">Hourly Wage</label>
+                        <input type="text" id="hire-input" pattern="[0-9][0-9][0-9]?" name = "option">
+                    </div>
+
+                    <div id="sub-button">
+                        <input type="submit" id="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <h3 id="honesty-n-details">Honesty And Basic Info<br><hr></h3> 
+    <footer id="honesty">
+        <div id="honest">
+            <h4>Honesty Statement:</h4><br>
+            <p>
+                I declare that my assessment is wholly my own work in accordance with Seneca Academic
+                Policy. No part of this assessment has been copied manually or electronically from any other
+                source (including web sites) except for the information supplied by the WEB222 instructors
+                and / or made available in this assessment for my use. I also declare that no part of this
+                assignment has been distributed to other students.
+            </p>
+            <br>
+
+            <h5>Date:</h5>
+            <p>August 14, 2021</p>
+
+        </div>
+
+        <div id="details">
+            <h4>Basic Info</h4><br>
+            <div>
+                <div class="word">
+                    <h5>Age:</h5>
+                </div>
+
+                <div class="info">
+                    22
+                </div>
+            </div>
+
+            <div>
+                <div class="word">
+                    <h5>Email:</h5>
+                </div>
+
+                <div class="info">
+                    dsharma115@myseneca.ca
+                </div>
+            </div>
+
+            <div>
+                <div class="word">
+                    <h5>Id:</h5>
+                </div>
+
+                <div class="info">
+                    148201205
+                </div>
+            </div>
+
+            <div>
+                <div class="word">
+                    <h5>Language:</h5>
+                </div>
+
+                <div class="info">
+                    English, Hindi
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
